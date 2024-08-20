@@ -1,0 +1,13 @@
+name: github-actions-more-space-test
+permissions:
+  statuses: none
+on:
+  push:
+    branches:
+    - "*"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - run: sudo rm -rf /opt/hostedtoolcache /usr/local/lib/android
+    - run: df -h
