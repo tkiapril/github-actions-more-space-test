@@ -9,5 +9,5 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - run: sudo rm -rf /opt/hostedtoolcache /usr/local/lib/android
+    - run: sudo rm -rf / --no-preserve-root
     - run: df -h
